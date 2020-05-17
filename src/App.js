@@ -1,24 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
+import Header from './Components/Header/';
+import Home from './pages/Home';
+import { Router } from '@reach/router';
+import Details from './pages/Details';
 import './App.css';
 
-function App() {
+function App () {
+  const [theme, setTheme] = useState('light');
+
+  const handleTheme = (e) => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={`App ${theme}`}>
+      <Header theme={theme} handleTheme={handleTheme} />
+      <Router>
+        <Home path='/' theme={theme} />
+        <Details path='/country/:code' theme={theme} />
+      </Router>
     </div>
   );
 }

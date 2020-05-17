@@ -1,0 +1,40 @@
+.link-detail {
+  text-decoration: none;
+}
+.card {
+  width: 100%;
+  border-radius: 4px;
+  box-shadow: 0px 0px 5px rgba(0,0,0, .1);
+}
+.card-dark {
+  background: hsl(209, 23%, 22%);
+  color: hsl(0, 0%, 100%);
+}
+.card-light {
+  background: hsl(0, 0%, 100%);
+  color: hsl(200, 15%, 8%);
+}
+.flag-country {
+  width: inherit;
+  height: 150px;
+  object-fit: cover;
+}
+
+.data-country {
+  padding: 15px 25px 30px;
+  font-size: 14px;
+}
+
+.country-name {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.data-label {
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.data-label span {
+  font-weight: 300;
+}
