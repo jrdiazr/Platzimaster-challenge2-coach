@@ -40,9 +40,3 @@ Finalmente, se puede proceder a ejecutar la aplicacion con el comando:
 ### `npm start`
 
 Para ingresar a la aplicacion escribimos en una ventana en el navegador `http://localhost:8080/` donde la aplicacion quedara interactuable para el usuario.
-
-## Demo
-
-Una demo de la aplicacion esta publicada en Heroku. El link para acceder es:
-
-### https://empleapp.herokuapp.com/
